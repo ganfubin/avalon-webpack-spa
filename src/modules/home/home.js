@@ -1,6 +1,7 @@
 /**
  * Created by WangMing on 15/12/9.
  */
+require("./../../assets/css/home.scss");
 define([], function () {
   // 定义所有相关的vmodel
   var vm = avalon.define({
@@ -12,7 +13,10 @@ define([], function () {
   return avalon.controller(function ($ctrl) {
     // 视图渲染后，意思是avalon.scan完成
     $ctrl.$onRendered = function () {
-
+      var width = window.innerWidth;
+      var heigth = window.innerHeight;
+      var tempLeft = 150;
+      $("#home").height(heigth);
     };
     // 进入视图
     $ctrl.$onEnter = function (param, rs, rj) {

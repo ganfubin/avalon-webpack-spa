@@ -55,6 +55,9 @@ module.exports = {
     }, {
       test: /\.json$/,
       loader: 'json'
+    },{
+      test:/\.(scss|sass)?$/,
+      loader:'style!css!sass'
     }],
     preLoaders: [{
       test: /\.js$/,

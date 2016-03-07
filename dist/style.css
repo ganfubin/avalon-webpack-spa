@@ -273,13 +273,15 @@ ul{
 }
 .router-panel{
     height: 100%;
-    background-color: aliceblue;
+    background: url(images/panl-bg.7fe5d4df0c9c9bb4892181c6e8c3e364.jpg) no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 .home-panel{
-    background-color:#00BCD4;
-    color: white;
     height: 100%;
-    width: 100%;
+    background: url(images/panl-bg.7fe5d4df0c9c9bb4892181c6e8c3e364.jpg) no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 .about-panel{
     background-color:#FF5722;
@@ -293,6 +295,22 @@ ul{
     height: 100%;
     width: 100%;
 
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix{zoom:1;}
+
+.clearfix:after{
+      visibility:hidden;
+      display:block;
+      font-size:0;
+      content:" ";
+      clear:both;
+      height:0;
 }
 /*
 这是每个都组件都应该引用的部分

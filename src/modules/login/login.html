@@ -1,5 +1,39 @@
 
-<div ms-controller="login" class="login-style">
-    <div>{{loginTemp}}</div>
+<div ms-controller="login" class="home-panel login-panel" id="login">
+    <div class="login-wrap" ms-click="testFuc">
+        <div class="login-title">
+            <img class="login-icon" src="http://img0.imgtn.bdimg.com/it/u=184485517,3525770759&fm=21&gp=0.jpg">
+        </div>
+        <div class="login-col-0">
+            <div class="login-user">
+                <div class="login-user-icon-wrap">
+                    <div class="login-user-icon"></div>
+                </div>
+            </div>
+            <div class="login-user flex-1 box-pack-start">
+                <div class="login-user-input">
+                    <input type="text" class="user-input-bg"/>
+                </div>
+            </div>
+        </div>
+        <div class="login-col-0">
+            <div class="login-user">
+                <div class="login-user-icon-wrap">
+                    <div class="login-user-icon password"></div>
+                </div>
+            </div>
+            <div class="login-user flex-1 box-pack-start">
+                <div class="login-user-input">
+                    <input type="password" class="user-input-bg"/>
+                </div>
+            </div>
+        </div>
+        <div class="login-col-0">
+            <div class="login-user login-forget">忘记密码</div>
+            <div class="login-user login-button-wrap">
+                <div class="login-enter-icon"></div>
+            </div>
+        </div>
+    </div>
     <!--测试-->
 </div>

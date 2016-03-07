@@ -1,0 +1,155 @@
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix{zoom:1;}
+//实力清浮动
+.clearfix:after{
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content:"\0020";
+  clear:both;
+  height:0;
+}
+.login-style{
+  background-color: grey;
+  background: url("./../images/common/panl-bg.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 100px 100px;
+}
+.login-panel{
+  //height: 1000px;
+  margin-left: 250px;
+  padding-top: 100px;
+}
+
+.login-wrap{
+  //border: 1px solid #fff;
+  width: 640px;
+  height: 600px;
+  background: -webkit-radial-gradient(#272e31, #111415); /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(#272e31, #111415); /* Opera 11.1 - 12.0 */
+  background: -moz-radial-gradient(#272e31, #111415); /* Firefox 3.6 - 15 */
+  background: radial-gradient(#272e31, #111415); /* 标准的语法 */
+  border-radius: 10%;
+  .login-title{
+    width: 100%;
+    height: 152px;
+    padding-top: 24px;
+    //border: 1px solid #fff;
+    .login-icon{
+      display: block;
+      background-color: #fff;
+      margin: 10px auto;
+      width:105px;
+      height: 105px;
+      border-radius: 50%;
+      background-size: contain;
+      border: 1px solid #fff;
+    }
+  }
+  .login-col-0{
+    display: flex;
+    width: 100%;
+    height: 63px;
+    .login-user{
+      width: 220px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align : center;
+      -webkit-box-pack: end;
+      -moz-webkit-box-pack:end;
+      box-pack : end;
+    }
+    .flex-1{
+      width: 100%;
+      flex: 1;
+    }
+    .login-user-icon-wrap{
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+      background-color: #343b3e;
+    }
+    .login-user-icon{
+      margin: 4px;
+      width: 39px;
+      height: 39px;
+      background: url("./../images/common/user.png") no-repeat;
+    }
+    .password{
+      margin: -2px;
+      background: url("./../images/common/pass.png") no-repeat;
+      background-size: contain;
+      height: 50px;
+      width: 50px;
+    }
+    .box-pack-start{
+      margin-left: 5px;
+      -webkit-box-pack: start;
+      -moz-box-pack:start;
+      box-pack:start;
+    }
+    .login-user-input{
+      width: 210px;
+      height: 30px;
+      padding: 8px;
+      background-color: #343b3e;
+      border-radius: 3px;
+    }
+    .login-button-wrap{
+      margin-left: 104px;
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      //background-color:#343b3e ;
+      background: -webkit-radial-gradient(#111415, #343b3e); /* Safari 5.1 - 6.0 */
+      background: -o-radial-gradient(#111415, #343b3e); /* Opera 11.1 - 12.0 */
+      background: -moz-radial-gradient(#111415, #343b3e); /* Firefox 3.6 - 15 */
+      background: radial-gradient(#111415, #343b3e); /* 标准的语法 */
+      .login-enter-icon{
+        width: 50px;
+        height: 50px;
+        background: url("./../images/common/login.png") no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+      }
+    }
+    .login-forget{
+      width: 290px;
+      -webkit-box-align: start;
+      -moz-box-align: start;
+      box-align : start;
+      cursor: pointer;
+    }
+    .user-input-bg{
+      width: 188px;
+      height: 25px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: #111415;
+      padding: 2px 10px;
+      &:focus{
+        background: -webkit-radial-gradient(#2f3735, #111415); /* Safari 5.1 - 6.0 */
+        background: -o-radial-gradient(#2f3735, #111415); /* Opera 11.1 - 12.0 */
+        background: -moz-radial-gradient(#2f3735, #111415); /* Firefox 3.6 - 15 */
+        background: radial-gradient(#2f3735, #111415); /* 标准的语法 */
+        outline: none;
+      }
+      .user-input{
+        border: 0px none black;
+        width: 190px;
+      }
+    }
+  }
+}
