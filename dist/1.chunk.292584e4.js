@@ -1,0 +1,2 @@
+webpackJsonp([1,10],{8:function(n,o){},38:function(n,o,e){var i,t;e(8),i=[],t=function(){var n=avalon.define({$id:"login",loginTemp:"3434",$optTimepicker:{}});return avalon.controller(function(o){o.$onRendered=function(){console.log(123)},o.$onEnter=function(n,o,e){},o.$onBeforeUnload=function(){},o.$vmodels=[n]})}.apply(o,i),!(void 0!==t&&(n.exports=t))}});
+//# sourceMappingURL=1.chunk.292584e4.js.map

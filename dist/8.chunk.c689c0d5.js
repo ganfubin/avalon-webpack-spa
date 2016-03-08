@@ -1,0 +1,2 @@
+webpackJsonp([8,10],{36:function(n,o,e){var t,a;t=[],a=function(){var n=avalon.define({$id:"contact"});return avalon.controller(function(o){o.$onRendered=function(){},o.$onEnter=function(n,o,e){},o.$onBeforeUnload=function(){},o.$vmodels=[n]})}.apply(o,t),!(void 0!==a&&(n.exports=a))}});
+//# sourceMappingURL=8.chunk.c689c0d5.js.map

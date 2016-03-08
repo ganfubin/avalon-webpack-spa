@@ -1,0 +1,12 @@
+<div id='wrap' ms-controller="waterfall">
+    <ul ms-each-els="img_list" id='wrap_row'>
+        <li ms-each-el="els" ms-attr-id='row{{$index}}'
+            data-each-rendered='rendered'>
+            <p>
+                <img ms-src="http://cued.xunlei.com/demos/publ/img/P_{{el.src}}.jpg"
+                        width='192' ms-attr-height='{{el.height}}'> <span>{{el.src}}</span>
+            </p>
+        </li>
+        <li id='waterFallDetect' ms-if='$last'></li>
+    </ul>
+</div>

@@ -6,10 +6,130 @@
   //width: 100%;
   //height: 100%;
   //padding: 100px 100px;
+  width: 983px;
+  padding: 0 10px;
+  padding-top: 40px;
+  margin-left: 200px;
 }
 .test-div{
   display: block;
   height: 400px;
   width: 100%;
+}
+.header-wrap{
+  width: 100px;
+  height: 100px;
+  //border: 1px solid #FAFAFA;
+  .topLeft{
+    width: 560px;
+    padding: 20px 0 0 26px;
+    color: #ffffff;
+  }
+  h2{
+    height: 34px;
+  }
+  .webTag{
 
+  }
+}
+.ac_fg{
+  background: url("http://sz.happyvalley.cn/Activity/images/fg.jpg") no-repeat;
+  width: 725px;
+  height: 3px;
+  margin: 20px auto;
+}
+.ac-pager{
+  width: 460px;
+  margin: 20px auto;
+}
+.content-wrap{
+  //background-color: #FAFAFA;
+  padding: 10px 10px 30px 30px;
+  //border: 1px solid #ffffff;
+  background: -webkit-radial-gradient(#FAFAFA, #111415); /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(#FAFAFA, #111415); /* Opera 11.1 - 12.0 */
+  background: -moz-radial-gradient(#FAFAFA, #111415); /* Firefox 3.6 - 15 */
+  background: radial-gradient(#FAFAFA, #111415); /* 标准的语法 */
+  .ac_content{
+    width: 641px;
+    margin: 20px 100px;
+    position: relative;
+    .ac_kuai{
+      width: 739px;
+      height: 210px;
+      border: 1px solid #dedede;
+      position: relative;
+      background-color: #FAFAFA;
+    }
+    .ac_ysj{
+      position: absolute;
+      background: url("http://sz.happyvalley.cn/Activity/images/jinx.png") no-repeat;
+      width: 93px;
+      height: 93px;
+      right: -8px;
+      top:-7px;
+    }
+    .ac_yxj{
+      position: absolute;
+      background: url("http://sz.happyvalley.cn/Activity/images/yxj.png") no-repeat;
+      width: 45px;
+      height: 31px;
+      right: 0px;
+      bottom: 0px;
+    }
+    .ac_img{
+      background: url("http://sz.happyvalley.cn/Activity/images/yhxx_h.jpg") no-repeat;
+      width: 308px;
+      height: 177px;
+      margin: 23px 0 20px 20px;
+      img{
+        width: 294px;
+        height: 165px;
+        padding: 5px 0 0 5px;
+      }
+    }
+    .ac_text{
+      width: 390px;
+      margin: 23px 0 0 15px;
+      h1{
+        font-size: 18px;
+        color: #ff9f18;
+        font-weight: 100;
+        margin: 5px 0;
+      }
+      p{
+        color: #8fc31f;
+        font-size: 12px;
+      }
+      span{
+        background: url("http://sz.happyvalley.cn/Activity/images/time.jpg") no-repeat;
+        width: 16px;
+        height: 15px;
+        display: inline-block;
+        padding-right: 10px;
+      }
+      .ac_text_content{
+        color: #7d7d7d;
+        line-height: 20px;
+        margin-top: 5px;
+      }
+    }
+    .ac_btn{
+      background: url("http://sz.happyvalley.cn/Activity/images/hd.png") no-repeat;
+      width: 123px;
+      height: 32px;
+      position: absolute;
+      line-height: 32px;
+      top: 170px;
+      left: 345px;
+      a{
+        color: #898989;
+        padding-left: 44px;
+        display: block;
+        width: 79px;
+        height: 32px;
+        font-size:12px;
+      }
+    }
+  }
 }
