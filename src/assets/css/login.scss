@@ -267,6 +267,27 @@ body{
       color: #f5ffff;
     }
   }
+  .em{
+    color: red;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    font-size: 20px;
+
+  }
+  .input-right{
+    position: absolute;
+    right: -40px;
+    top: 2px;
+    background: url("../images/common/down.png") no-repeat center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
+  .new-login-border-hide{
+    border-style: none;
+    height: 30px;
+  }
   .span-right{
     text-align: right;
   }
@@ -283,7 +304,24 @@ body{
       display: inline-block;
     }
   }
+  .registerRight{
+    color: #ffffff;
+    background-color: #56affe;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+  }
+  .registerLeft{
+    color: #000000;
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+
+  }
 }
 .new-login-margin{
   margin-bottom: 10px;
+}
+.new-login-border-hide{
+  border-style: none;
 }
