@@ -1,4 +1,4 @@
-webpackJsonp([0,11],[
+webpackJsonp([0,13],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -64,14 +64,14 @@ webpackJsonp([0,11],[
 	      templateProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(3, function (tt) {
-	            rs(__webpack_require__(47))
+	            rs(__webpack_require__(46))
 	          })
 	        })
 	      },
 	      controllerProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(4, function () {
-	            rs(__webpack_require__(48))
+	            rs(__webpack_require__(47))
 	          })
 	        })
 	      }
@@ -86,14 +86,14 @@ webpackJsonp([0,11],[
 	      templateProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(5, function (tt) {
-	            rs(__webpack_require__(49))
+	            rs(__webpack_require__(48))
 	          })
 	        })
 	      },
 	      controllerProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(6, function () {
-	            rs(__webpack_require__(50))
+	            rs(__webpack_require__(49))
 	          })
 	        })
 	      }
@@ -108,14 +108,14 @@ webpackJsonp([0,11],[
 	      templateProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(7, function (tt) {
-	            rs(__webpack_require__(51))
+	            rs(__webpack_require__(50))
 	          })
 	        })
 	      },
 	      controllerProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(8, function () {
-	            rs(__webpack_require__(52))
+	            rs(__webpack_require__(51))
 	          })
 	        })
 	      }
@@ -130,14 +130,36 @@ webpackJsonp([0,11],[
 	      templateProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(9, function (tt) {
-	            rs(__webpack_require__(53))
+	            rs(__webpack_require__(56))
 	          })
 	        })
 	      },
 	      controllerProvider: function () {
 	        return new Promise(function (rs) {
 	          __webpack_require__.e/* nsure */(10, function () {
-	            rs(__webpack_require__(54))
+	            rs(__webpack_require__(57))
+	          })
+	        })
+	      }
+	    }
+	  }
+	});
+	avalon.state("photoes", {
+	  url: "/photoes",
+	  views: {
+	    "": {
+	      //配置模块模板和控制器
+	      templateProvider: function () {
+	        return new Promise(function (rs) {
+	          __webpack_require__.e/* nsure */(11, function (tt) {
+	            rs(__webpack_require__(67))
+	          })
+	        })
+	      },
+	      controllerProvider: function () {
+	        return new Promise(function (rs) {
+	          __webpack_require__.e/* nsure */(12, function () {
+	            rs(__webpack_require__(68))
 	          })
 	        })
 	      }

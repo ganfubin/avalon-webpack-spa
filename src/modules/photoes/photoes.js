@@ -16,7 +16,7 @@ require([ "avalon" ], function(avalon) {
     var waterfall = {
         load_items : null,
         loaded_items:[],
-        col_num : 0,// ÁĞÊı
+        col_num : 0,// åˆ—æ•°
         waterfall_model : null,
         col_width : 200,
         loaded_num : 0,
@@ -25,7 +25,7 @@ require([ "avalon" ], function(avalon) {
         start:0,
         resizing:false,
         find_shortest_col : function() {
-            // ÕÒ³ö×îĞ¡¸ß¶ÈµÄÁĞ
+            // æ‰¾å‡ºæœ€å°é«˜åº¦çš„åˆ—
             var a = avalon($('row0')).height(), min_i = 0;
             for ( var i = 1; i < this.col_num; i++) {
                 var b = avalon($('row' + i)).height();
@@ -47,7 +47,7 @@ require([ "avalon" ], function(avalon) {
                 waterfall_model.img_list.push([]);
             }
             for ( var j = 0; j < this.col_num; j++) {
-                // µÚÒ»ĞĞÍ¼Æ¬
+                // ç¬¬ä¸€è¡Œå›¾ç‰‡
                 var a={};
                 a.src=getIndex(data[j].src);
                 a.height=data[j].height;
@@ -82,7 +82,7 @@ require([ "avalon" ], function(avalon) {
     };
     var waterfall_model = avalon.define("waterfall",function(vm) {// vm
         vm.img_list = [];
-        vm.rendered = function() {// Ã¿´ÎÍ¼Æ¬¼ÓÔØäÖÈ¾ºóÖ´ĞĞ
+        vm.rendered = function() {// æ¯æ¬¡å›¾ç‰‡åŠ è½½æ¸²æŸ“åæ‰§è¡Œ
 
             if(waterfall.resizing){
                 if (waterfall.loaded_num+ waterfall.init_num<waterfall.loaded_items.length){
@@ -115,7 +115,7 @@ require([ "avalon" ], function(avalon) {
         }
     }
     avalon.post("http://localhost/css/test.php?start=0", function(data) {
-        // ¼ÓÔØµÚÒ»´Î
+        // åŠ è½½ç¬¬ä¸€æ¬¡
         waterfall.init(data);
     }, "json");
     window.onscroll =debouncer( function ( e ) {
@@ -123,7 +123,7 @@ require([ "avalon" ], function(avalon) {
             window).height(), documentHeight = avalon(document).height();
         if (windowHeight + scrollTop==documentHeight) {
             avalon.post("http://localhost/css/test.php?start="+(waterfall.start), function(data) {
-                // ¼ÓÔØµÚÒ»´Î
+                // åŠ è½½ç¬¬ä¸€æ¬¡
                 waterfall.resizing=false;
                 waterfall.load_items=data;
                 waterfall.loaded_items=waterfall.loaded_items.concat(data);

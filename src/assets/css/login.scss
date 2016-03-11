@@ -14,6 +14,9 @@
   clear:both;
   height:0;
 }
+body{
+  font-family:Helvetica Neue,Helvetica,Tahoma,Microsoft Yahei;
+}
 .login-style{
   background-color: grey;
   background: url("./../images/common/panl-bg.jpg") no-repeat;
@@ -24,8 +27,8 @@
 }
 .login-panel{
   //height: 1000px;
-  margin-left: 250px;
-  padding-top: 100px;
+  //margin-left: 450px;
+  //padding-top: 300px;
 }
 
 .login-wrap{
@@ -152,4 +155,135 @@
       }
     }
   }
+}
+
+.new-login-wrap{
+  position: relative;
+  width: 500px;
+  //height: 250px;
+  background-color: #ffffff;
+  padding: 100px 0px 0px 0px;
+  .new-login-img{
+    position: absolute;
+    left: 170px;
+    top: -80px;
+    height: 156px;
+    width: 156px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #dddddd;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack:center;
+    .new-login-img-in{
+      display: block;
+      //margin: 13px;
+      height: 130px;
+      line-height: 130px;
+      width: 130px;
+      //border: 1px solid #dddddd;
+      background: url("../images/common/20160103175943_SkFQf.png") no-repeat;
+      background-size: contain;
+      border-radius: 50%;
+    }
+  }
+  .new-login-input{
+    height: 46px;
+    width: 320px;
+    border: 1px solid #ddd;
+    margin: 5px auto;
+    display: flex;
+    position: relative;
+    .input-icon{
+      width:60px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -webkit-box-pack: center;
+      -moz-box-pack:center;
+      border-right: 1px solid #eeeeee;
+    }
+    .icon-img{
+      width: 16px;
+      height: 23px;
+      background: url("../images/common/user_icon.png") no-repeat center center;
+      background-size: contain;
+    }
+    .icon-pwd{
+      background: url("../images/common/key.png") no-repeat center center;
+      background-size: contain;
+    }
+    .icon-phone{
+      background: url("../images/common/phoneIcon.png") no-repeat center center;
+      background-size: contain;
+    }
+    .input-style{
+      outline: none;
+      border-style: none;
+      width: 100%;
+      padding: 15px 10px;
+      font-size: 16px;
+      z-index: 10;
+    }
+    .triangle-left {
+      position: absolute;
+      left: 36px;
+      top:13px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 20px solid #ddd;
+      border-bottom: 10px solid transparent;
+    }
+    .triangle-left-bottom{
+      position: absolute;
+      left: 37px;
+      top:13px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 20px solid #ffffff;
+      border-bottom: 10px solid transparent;
+    }
+  }
+  .new-login-button{
+    margin: 20px auto 0;
+    height: 50px;
+    width: 320px;
+    background-color: #56affe;
+    text-align: center;
+    cursor: pointer;
+    .button-span{
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      color: #f5ffff;
+    }
+  }
+  .span-right{
+    text-align: right;
+  }
+  .span-left{
+    text-align: left;
+  }
+  .new-login-span{
+    margin: 10px auto;
+    height: 50px;
+    width: 320px;
+    .span-inline{
+      cursor: pointer;
+      width: 48%;
+      display: inline-block;
+    }
+  }
+}
+.new-login-margin{
+  margin-bottom: 10px;
 }
