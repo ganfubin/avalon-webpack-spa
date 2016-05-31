@@ -9,6 +9,7 @@
     {% for (var css in o.htmlWebpackPlugin.files.css) { %}
     <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
     {% } %}
+    <link rel="shortcut icon" href="src/assets/images/common/favicon.ico" type="image/x-icon" >
 </head>
 <body>
 <div ms-controller="app">
@@ -33,6 +34,7 @@
                 <!--<li class="pure-menu-item"><a href="#!/contact" class="pure-menu-link">联系</a></li>-->
                 <li class="pure-menu-item"><a href="#!/login" class="pure-menu-link">登录</a></li>
                 <li class="pure-menu-item"><a href="#!/photoes" class="pure-menu-link">相册</a></li>
+                <li class="pure-menu-item"><a href="#!/dome" class="pure-menu-link">组件测试</a></li>
             </ul>
         </div>
     </div>

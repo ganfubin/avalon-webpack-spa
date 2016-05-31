@@ -10,86 +10,49 @@
     </div>
     <div class="content-wrap">
         <!--第一个-->
-        <div class="ac_content clearfix">
-            <div class="ac_kuai">
-                <div class="ac_ysj"></div>
-                <div class="ac_yxj left"></div>
-                <div class="ac_img left">
-                    <a href="#!/home" target="_blank">
-                        <img src="http://img2.3lian.com/2014/f5/147/d/35.jpg"></a>
-                </div>
-                <div class="ac_text left">
-                    <h1>2016深圳欢乐谷踏青萌宠季</h1>
-                    <p><span></span>2016年03月05日 - 2016年04月17日</p>
-                    <p class="ac_text_content">白白红红相间开，三三五五踏青来。3月5日至4月17日，深圳欢乐谷第二届“踏青萌宠季”萌翻来袭！一大波来自全球各地的萌萌哒神宠深圳欢乐谷聚首，响应“Animal, go go go！（爱你喵，汪汪汪）”的主题号召，让你一次被萌到没朋友！</p>
-                </div>
-                <div class="ac_btn" style="left: 345px;">
-                    <a>参加报名</a>
+        <div ms-repeat-el="dataArray">
+            <div class="ac_content clearfix">
+                <div class="ac_kuai">
+                    <div class="ac_ysj" ms-if="el.boolean==1"></div>
+                    <div class="ac_yxj left"></div>
+                    <div class="ac_img left">
+                        <a href="#!/home" target="_blank">
+                            <img src="http://img2.3lian.com/2014/f5/147/d/35.jpg"></a>
+                    </div>
+                    <div class="ac_text left">
+                        <h1>{{el.title}}</h1>
+                        <p><span></span>{{el.time}}</p>
+                        <p class="ac_text_content">{{el.content}}</p>
+                    </div>
+                    <div ms-click="joinClick" class="ac_btn" style="left: 345px;">
+                        <a>{{el.boolean==1?"参加报名":"已过期"}}</a>
+                    </div>
                 </div>
             </div>
+            <div class="ac_fg"></div>
         </div>
-        <div class="ac_fg"></div>
         <!--第二个-->
-        <div class="ac_content">
-            <div class="ac_kuai">
-                <div class="ac_ysj"></div>
-                <div class="ac_yxj left"></div>
-                <div class="ac_img left">
-                    <a href="#!/home" target="_blank">
-                        <img src="http://www.sq86.cn/d/file/qqdaima/QQkongjian/QQkongjianzhuangbansucai/2011-06-01/845894cffb24f5ba0538141bc4d4e98e.jpg"></a>
-                </div>
-                <div class="ac_text left">
-                    <h1>2016深圳欢乐谷踏青萌宠季</h1>
-                    <p><span></span>2016年03月05日 - 2016年04月17日</p>
-                    <p class="ac_text_content">白白红红相间开，三三五五踏青来。3月5日至4月17日，深圳欢乐谷第二届“踏青萌宠季”萌翻来袭！一大波来自全球各地的萌萌哒神宠深圳欢乐谷聚首，响应“Animal, go go go！（爱你喵，汪汪汪）”的主题号召，让你一次被萌到没朋友！</p>
-                </div>
-                <div class="ac_btn" style="left: 345px;">
-                    <a>参加报名</a>
-                </div>
-            </div>
-        </div>
-        <div class="ac_fg"></div>
+        <!--<div class="ac_content">-->
+            <!--<div class="ac_kuai">-->
+                <!--<div class="ac_ysj"></div>-->
+                <!--<div class="ac_yxj left"></div>-->
+                <!--<div class="ac_img left">-->
+                    <!--<a href="#!/home" target="_blank">-->
+                        <!--<img src="http://www.sq86.cn/d/file/qqdaima/QQkongjian/QQkongjianzhuangbansucai/2011-06-01/845894cffb24f5ba0538141bc4d4e98e.jpg"></a>-->
+                <!--</div>-->
+                <!--<div class="ac_text left">-->
+                    <!--<h1>2016深圳欢乐谷踏青萌宠季</h1>-->
+                    <!--<p><span></span>2016年03月05日 - 2016年04月17日</p>-->
+                    <!--<p class="ac_text_content">白白红红相间开，三三五五踏青来。3月5日至4月17日，深圳欢乐谷第二届“踏青萌宠季”萌翻来袭！一大波来自全球各地的萌萌哒神宠深圳欢乐谷聚首，响应“Animal, go go go！（爱你喵，汪汪汪）”的主题号召，让你一次被萌到没朋友！</p>-->
+                <!--</div>-->
+                <!--<div class="ac_btn" style="left: 345px;">-->
+                    <!--<a>参加报名</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="ac_fg"></div>-->
 
-
-        <div class="ac_content">
-            <div class="ac_kuai">
-                <div class="ac_ysj"></div>
-                <div class="ac_yxj left"></div>
-                <div class="ac_img left">
-                    <a href="#!/home" target="_blank">
-                        <img src="http://www.sq86.cn/d/file/qqdaima/QQkongjian/QQkongjianzhuangbansucai/2011-06-01/845894cffb24f5ba0538141bc4d4e98e.jpg"></a>
-                </div>
-                <div class="ac_text left">
-                    <h1>2016深圳欢乐谷踏青萌宠季</h1>
-                    <p><span></span>2016年03月05日 - 2016年04月17日</p>
-                    <p class="ac_text_content">白白红红相间开，三三五五踏青来。3月5日至4月17日，深圳欢乐谷第二届“踏青萌宠季”萌翻来袭！一大波来自全球各地的萌萌哒神宠深圳欢乐谷聚首，响应“Animal, go go go！（爱你喵，汪汪汪）”的主题号召，让你一次被萌到没朋友！</p>
-                </div>
-                <div class="ac_btn" style="left: 345px;">
-                    <a>参加报名</a>
-                </div>
-            </div>
-        </div>
-        <div class="ac_fg"></div>
-
-        <div class="ac_content">
-            <div class="ac_kuai">
-                <div class="ac_ysj"></div>
-                <div class="ac_yxj left"></div>
-                <div class="ac_img left">
-                    <a href="#!/home" target="_blank">
-                        <img src="http://www.sq86.cn/d/file/qqdaima/QQkongjian/QQkongjianzhuangbansucai/2011-06-01/845894cffb24f5ba0538141bc4d4e98e.jpg"></a>
-                </div>
-                <div class="ac_text left">
-                    <h1>2016深圳欢乐谷踏青萌宠季</h1>
-                    <p><span></span>2016年03月05日 - 2016年04月17日</p>
-                    <p class="ac_text_content">白白红红相间开，三三五五踏青来。3月5日至4月17日，深圳欢乐谷第二届“踏青萌宠季”萌翻来袭！一大波来自全球各地的萌萌哒神宠深圳欢乐谷聚首，响应“Animal, go go go！（爱你喵，汪汪汪）”的主题号召，让你一次被萌到没朋友！</p>
-                </div>
-                <div class="ac_btn" style="left: 345px;">
-                    <a>参加报名</a>
-                </div>
-            </div>
-        </div>
-        <div class="ac_fg"></div>
+        <!--pager-->
         <div class="ac-pager" ms-widget="pager"></div>
     </div>
 

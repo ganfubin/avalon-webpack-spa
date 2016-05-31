@@ -50,17 +50,18 @@
             </div>
             <div class="triangle-left"></div>
             <div class="triangle-left-bottom"></div>
-            <input class="input-style" ms-duplex="account" placeholder="请输入账号/手机号" type="text"/>
+            <input ms-on-blur="blurFuc(4)" class="input-style" ms-duplex="account" placeholder="请输入账号/手机号" type="text"/>
         </div>
 
         <div class="new-login-input">
             <div class="input-icon">
                 <div class="icon-img icon-pwd"></div>
             </div>
-            <input class="input-style" ms-duplex="password" placeholder="请输入密码" type="password"/>
+            <input ms-on-blur="blurFuc(5)" class="input-style" ms-duplex="password" placeholder="请输入密码" type="password"/>
             <div class="triangle-left"></div>
             <div class="triangle-left-bottom"></div>
         </div>
+        <div ms-if="loginError.length" class="new-login-input new-login-error">{{loginError}}</div>
         <div class="new-login-button" ms-click="loginFuc">
             <span class="button-span">登录</span>
         </div>
@@ -77,6 +78,7 @@
     <div class="new-login-img">
             <img class="new-login-img-in"/>
     </div>
+    <!--账号-->
     <div class="new-login-input">
             <em class="em">*</em>
             <div class="input-icon">
@@ -84,29 +86,35 @@
             </div>
             <div class="triangle-left"></div>
             <div class="triangle-left-bottom"></div>
-            <input class="input-style" ms-duplex="account" placeholder="请输入账号" type="text"/>
-            <div class="input-right"></div>
+            <input ms-on-blur="blurFuc(1)" class="input-style" ms-duplex="account" placeholder="请输入账号" type="text"/>
+            <div ms-if="accountError.length==0" class="input-right"></div>
     </div>
+    <div ms-if="accountError.length>1" class="new-login-input new-login-error">{{accountError}}</div>
+    <!--密码-->
     <div class="new-login-input">
     <em class="em">*</em>
             <div class="input-icon">
                 <div class="icon-img icon-pwd"></div>
             </div>
-            <input class="input-style" ms-duplex="password" placeholder="请输入密码" type="password"/>
+            <input ms-on-blur="blurFuc(2)" class="input-style" ms-duplex="password" placeholder="请输入密码(至少6位)" type="password"/>
             <div class="triangle-left"></div>
             <div class="triangle-left-bottom"></div>
-            <div class="input-right"></div>
+            <div ms-if="pswError.length==0" class="input-right"></div>
      </div>
+     <div ms-if="pswError.length>1" class="new-login-input new-login-error">{{pswError}}</div>
+     <!--确认密码-->
      <div class="new-login-input">
      <em class="em">*</em>
             <div class="input-icon">
                 <div class="icon-img icon-pwd"></div>
             </div>
-            <input class="input-style" ms-duplex="password" placeholder="请再次输入密码" type="password"/>
+            <input class="input-style" ms-on-blur="blurFuc(3)" ms-duplex="againPassword" placeholder="请再次输入密码" type="password"/>
             <div class="triangle-left"></div>
             <div class="triangle-left-bottom"></div>
-            <div class="input-right"></div>
+            <div ms-if="againError.length==0" class="input-right"></div>
      </div>
+     <div ms-if="againError.length>1" class="new-login-input new-login-error">{{againError}}</div>
+     <!--手机号-->
      <div class="new-login-input">
             <div class="input-icon">
                 <div class="icon-img icon-phone"></div>
@@ -115,11 +123,12 @@
             <div class="triangle-left"></div>
             <div class="triangle-left-bottom"></div>
      </div>
+     <!--提交取消按钮-->
      <div class="new-login-span">
             <div class="span-inline span-left registerRight right" ms-click="registerClick">
                 <span class="span-left">确定</span>
             </div>
-            <div class="span-inline span-right registerRight registerLeft left">
+            <div ms-click="cancelClick" class="span-inline span-right registerRight registerLeft left">
                 <span >取消</span>
             </div>
         </div>
