@@ -1,0 +1,2 @@
+webpackJsonp([2,10],{51:function(e,s){e.exports='<div ms-controller="services" class="services-panel">\r\n这里是服务页面\r\n    <button id="testjq" style="color: black">测试集成jquery</button>\r\n</div>'}});
+//# sourceMappingURL=2.chunk.114c4f0d.js.map

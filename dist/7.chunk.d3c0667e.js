@@ -1,0 +1,2 @@
+webpackJsonp([7,10],{37:function(n,o,e){var i,r;i=[],r=function(){var n=avalon.define({$id:"home",$optTimepicker:{}});return avalon.controller(function(o){o.$onRendered=function(){},o.$onEnter=function(n,o,e){},o.$onBeforeUnload=function(){},o.$vmodels=[n]})}.apply(o,i),!(void 0!==r&&(n.exports=r))}});
+//# sourceMappingURL=7.chunk.d3c0667e.js.map

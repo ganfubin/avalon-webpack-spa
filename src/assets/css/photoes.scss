@@ -1,0 +1,21 @@
+#wrap ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  font-size: 16px;
+}
+#wrap ul li p {
+  margin: 5px 2.5px;
+  border: 1px solid red;
+  min-width: 192px;
+  min-height: 100px;
+}
+#wrap span {
+  display: block;
+}
+#waterFallDetect {
+  width: 192px;
+  height: 100px;
+  border: 1px solid red;
+}

@@ -1,6 +1,8 @@
 /**
  * Created by WangMing on 15/12/9.
  */
+
+require("./../../assets/css/services.scss");
 define([], function () {
   // 定义所有相关的vmodel
   var vm = avalon.define({
@@ -10,9 +12,10 @@ define([], function () {
   return avalon.controller(function ($ctrl) {
     // 视图渲染后，意思是avalon.scan完成
     $ctrl.$onRendered = function () {
-      $("#testjq").click(function () {
-        alert("我是jquery控制弹出的!");
-      });
+      var width = window.innerWidth;
+      var heigth = window.innerHeight;
+      var tempLeft = 150;
+      $("#services").height(heigth);
     };
     // 进入视图
     $ctrl.$onEnter = function (param, rs, rj) {

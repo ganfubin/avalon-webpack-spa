@@ -133,6 +133,28 @@ avalon.state("login", {
     }
   }
 });
+avalon.state("photoes", {
+  url: "/photoes",
+  views: {
+    "": {
+      //配置模块模板和控制器
+      templateProvider: function () {
+        return new Promise(function (rs) {
+          require.ensure([], function (tt) {
+            rs(require("text!./modules/photoes/photoes.html"))
+          })
+        })
+      },
+      controllerProvider: function () {
+        return new Promise(function (rs) {
+          require.ensure([], function () {
+            rs(require("./modules/photoes/photoes.js"))
+          })
+        })
+      }
+    }
+  }
+});
 /**
  * 路由全局配置
  */
