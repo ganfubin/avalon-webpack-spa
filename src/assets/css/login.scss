@@ -253,6 +253,17 @@ body{
       border-bottom: 10px solid transparent;
     }
   }
+  .new-login-error{
+    display: block;
+    font-size: 12px;
+
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    background-color: #ffd6d6;
+    border: 1px solid #FE5A34;
+    color: #FE5A34;
+  }
   .new-login-button{
     margin: 20px auto 0;
     height: 50px;
@@ -316,7 +327,6 @@ body{
     color: #000000;
     background-color: #dddddd;
     border: 1px solid #dddddd;
-
   }
 }
 .new-login-margin{

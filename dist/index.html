@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>4444</title>
-    {% if (o.htmlWebpackPlugin.files.favicon) { %}
-    <link rel="shortcut icon" href="{%=o.htmlWebpackPlugin.files.favicon%}">
-    {% } %}
-    {% for (var css in o.htmlWebpackPlugin.files.css) { %}
-    <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
-    {% } %}
+    
+    
+    <link href="style.css?3a419853ae4a8d67c7c2" rel="stylesheet">
+    
     <link rel="shortcut icon" href="src/assets/images/common/favicon.ico" type="image/x-icon" >
 </head>
 <body>
@@ -46,8 +44,10 @@
         </div>
     </div>
 </div>
-{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
-<script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
-{% } %}
+
+<script src="common.js?3a419853ae4a8d67c7c2"></script>
+
+<script src="build.js?3a419853ae4a8d67c7c2"></script>
+
 </body>
 </html>

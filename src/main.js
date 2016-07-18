@@ -1,7 +1,7 @@
 /**
- * Created by WangMing on 15/12/9.
+ * Created by caozheng on 15/12/9.
  */
-var avalon = require("./assets/vendor/avalon/avalon.shim");
+var avalon = require("./assets/vendor/avalon/avalon-1.5.1");
 require('../node_modules/purecss/build/pure-min.css');
 require('./assets/css/layouts/side-menu.css');
 require('./assets/css/style.css');
@@ -149,6 +149,28 @@ avalon.state("photoes", {
         return new Promise(function (rs) {
           require.ensure([], function () {
             rs(require("./modules/photoes/photoes.js"))
+          })
+        })
+      }
+    }
+  }
+});
+avalon.state("dome", {
+  url: "/dome",
+  views: {
+    "": {
+      //配置模块模板和控制器
+      templateProvider: function () {
+        return new Promise(function (rs) {
+          require.ensure([], function (tt) {
+            rs(require("text!./modules/dome/dome.html"))
+          })
+        })
+      },
+      controllerProvider: function () {
+        return new Promise(function (rs) {
+          require.ensure([], function () {
+            rs(require("./modules/dome/dome.js"))
           })
         })
       }

@@ -1,5 +1,5 @@
 /**
- * Created by WangMing on 15/12/9.
+ * Created by caozheng on 15/12/9.
  */
 define([], function() {
   // 定义所有相关的 vmodel

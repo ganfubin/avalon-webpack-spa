@@ -9,10 +9,6 @@
     "start": "node server.js",
     "build": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wandergis/avalon-webpack-spa.git"
-  },
   "keywords": [
     "avalon",
     "webpack",
@@ -21,10 +17,6 @@
   ],
   "author": "wandergis",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wandergis/avalon-webpack-spa/issues"
-  },
-  "homepage": "https://github.com/wandergis/avalon-webpack-spa#readme",
   "dependencies": {
     "jquery": "^2.1.4",
     "purecss": "^0.6.0",

@@ -1,5 +1,5 @@
 /**
- * Created by WangMing on 15/12/9.
+ * Created by caozheng on 15/12/9.
  */
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');

@@ -1,5 +1,5 @@
 /**
- * Created by WangMing on 15/12/9.
+ * Created by caozheng on 15/12/9.
  */
 var path = require('path');
 var webpack = require("webpack");
@@ -81,7 +81,7 @@ module.exports = {
       pager: path.join(__dirname, "src/assets/vendor/oniui/pager/avalon.pager"),
       dialog: path.join(__dirname, "src/assets/vendor/oniui/dialog/avalon.dialog"),
       validation: path.join(__dirname, "src/assets/vendor/oniui/validation/avalon.validation"),
-      avalon: path.join(__dirname, 'src/assets/vendor/avalon/avalon.shim'), //在正常情况下我们以CommonJS风格引用avalon,以require('avalon')
+      avalon: path.join(__dirname, 'src/assets/vendor/avalon/avalon-1.5.1'), //在正常情况下我们以CommonJS风格引用avalon,以require('avalon')
       '../avalon': path.join(__dirname, 'src/assets/vendor/avalon/avalon.shim') //由于oniui都以是../avalon来引用avalon的，需要在这里进行别名
     }
   },

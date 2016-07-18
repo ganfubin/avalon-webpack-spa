@@ -4,7 +4,7 @@ webpackJsonp([6,13],{
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
-	 * Created by WangMing on 15/12/9.
+	 * Created by caozheng on 15/12/9.
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 	  // 定义所有相关的 vmodel
